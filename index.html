@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Cybrovate Documentation</title>
 
-  <!-- DOCSIFY THEME -->
+  <!-- Docsify Theme -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 
-  <!-- YOUR CUSTOM CSS -->
   <style>
 
   :root {
@@ -34,59 +33,61 @@
     font-weight: 600;
   }
 
-  .markdown-section h1,
-  .markdown-section h2,
-  .markdown-section h3 {
-    color: #38bdf8;
+  .app-name-link {
+    color: #38bdf8 !important;
+    font-weight: bold;
+    font-size: 28px;
   }
 
-/* H1 HEADINGS */
-.markdown-section h1 {
-  background-color: #0f172a;
-  color: #38bdf8;
+  .sidebar .app-name {
+    opacity: 1 !important;
+  }
 
-  padding: 15px 20px;
-  border-radius: 12px;
+  .content {
+    background-color: #0b1120;
+  }
 
-  border-left: 5px solid #38bdf8;
+  .markdown-section {
+    color: #e2e8f0;
+  }
 
-  box-shadow: 0 0 15px rgba(56, 189, 248, 0.15);
+  .markdown-section h1 {
+    color: #38bdf8 !important;
+  }
 
-  margin-bottom: 30px;
-}
-.markdown-section h1 {
-  color: #38bdf8 !important;
-}
-/* SITE TITLE */
-.app-name-link {
-  color: #38bdf8 !important;
-  font-weight: 700;
-  font-size: 28px;
-  opacity: 1 !important;
-}
+  .markdown-section h2,
+  .markdown-section h3 {
+    color: #60a5fa;
+  }
 
-/* REMOVE FADED EFFECT */
-.sidebar .app-name {
-  opacity: 1 !important;
-}
+  .markdown-section p,
+  .markdown-section li {
+    color: #cbd5e1;
+  }
+
+  .markdown-section pre {
+    background: #111827 !important;
+    border-radius: 10px;
+  }
 
   </style>
-
 </head>
 
 <body>
 
-  <div id="app"></div>
+  <div id="app">Loading...</div>
 
   <script>
     window.$docsify = {
       name: 'Cybrovate Documentation',
-      loadSidebar: 'ture',
+      repo: '',
+      loadSidebar: true,
       subMaxLevel: 3,
       auto2top: true
     }
   </script>
 
+  <!-- Docsify -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 
 </body>
