@@ -5,73 +5,163 @@
   <title>Cybrovate Documentation</title>
 
   <!-- Docsify Theme -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 
-  <style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  :root {
-    --theme-color: #38bdf8;
-  }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+<style>
 
-  body {
-    background-color: #0b1120;
-    color: #e2e8f0;
-    font-family: "Segoe UI", sans-serif;
-  }
+:root {
+  --theme-color: #3b82f6;
 
-  .sidebar {
-    background-color: #111827;
-    border-right: 1px solid #1e293b;
-  }
+  --base-background-color: #0b1120;
+  --base-color: #dbeafe;
 
-  .sidebar ul li a {
-    color: #cbd5e1;
-  }
+  --sidebar-background: #111827;
+  --sidebar-name-color: #60a5fa;
+  --sidebar-nav-link-color: #cbd5e1;
+  --sidebar-nav-link-color--active: #38bdf8;
 
-  .sidebar ul li.active > a {
-    color: #38bdf8;
-    font-weight: 600;
-  }
+  --content-max-width: 1100px;
 
-  .app-name-link {
-    color: #38bdf8 !important;
-    font-weight: bold;
-    font-size: 28px;
-  }
+  --code-inline-background: #111827;
+  --code-theme-background: #111827;
 
-  .sidebar .app-name {
-    opacity: 1 !important;
-  }
+  --table-row-odd-background: #0f172a;
 
-  .content {
-    background-color: #0b1120;
-  }
+  --selection-color: #1d4ed8;
+}
 
-  .markdown-section {
-    color: #e2e8f0;
-  }
+/* BODY */
+body {
+  background: #0b1120;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
 
-  .markdown-section h1 {
-    color: #38bdf8 !important;
-  }
+/* SIDEBAR */
+.sidebar {
+  border-right: 1px solid #1e293b;
+}
 
-  .markdown-section h2,
-  .markdown-section h3 {
-    color: #60a5fa;
-  }
+/* LOGO/TITLE */
+.app-name-link {
+  font-size: 26px !important;
+  font-weight: 700;
+  color: #38bdf8 !important;
 
-  .markdown-section p,
-  .markdown-section li {
-    color: #cbd5e1;
-  }
+  letter-spacing: 0.5px;
+}
 
-  .markdown-section pre {
-    background: #111827 !important;
-    border-radius: 10px;
-  }
+/* SIDEBAR LINKS */
+.sidebar ul li a {
+  font-size: 15px;
+  transition: 0.2s ease;
+}
 
-  </style>
-</head>
+.sidebar ul li a:hover {
+  color: #38bdf8;
+  padding-left: 5px;
+}
+
+/* ACTIVE LINK */
+.sidebar ul li.active > a {
+  background: rgba(56,189,248,0.1);
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+/* MAIN CONTENT */
+.markdown-section {
+  padding-top: 30px;
+}
+
+/* HEADINGS */
+.markdown-section h1 {
+  color: #60a5fa;
+  font-size: 42px;
+  font-weight: 700;
+
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 15px;
+}
+
+.markdown-section h2 {
+  color: #38bdf8;
+  margin-top: 50px;
+}
+
+.markdown-section h3 {
+  color: #7dd3fc;
+}
+
+/* TEXT */
+.markdown-section p,
+.markdown-section li {
+  color: #cbd5e1;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+/* LINKS */
+.markdown-section a {
+  color: #38bdf8;
+}
+
+/* CODE BLOCKS */
+.markdown-section pre {
+  border-radius: 14px;
+  border: 1px solid #1e293b;
+
+  box-shadow:
+    0 0 0 1px rgba(56,189,248,0.05),
+    0 8px 30px rgba(0,0,0,0.3);
+}
+
+/* INLINE CODE */
+.markdown-section code {
+  border-radius: 6px;
+  padding: 3px 6px;
+}
+
+/* TABLES */
+.markdown-section table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* BLOCKQUOTES */
+.markdown-section blockquote {
+  background: #111827;
+  border-left: 4px solid #38bdf8;
+
+  border-radius: 8px;
+
+  padding: 10px 20px;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 20px;
+}
+
+/* HERO GLOW */
+.markdown-section h1,
+.app-name-link {
+  text-shadow:
+    0 0 10px rgba(59,130,246,0.35);
+}
+
+</style>
+
+
+ </head>
 
 <body>
 
@@ -90,6 +180,8 @@
 
   <!-- Docsify -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-powershell.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
 </body>
 </html>
