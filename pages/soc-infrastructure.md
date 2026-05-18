@@ -1,10 +1,12 @@
 # SOC Infrastructure
 
-This section documents SOC tooling and operational infrastructure.
+SOC infrastructure includes platforms and operational tooling.
+
+---
 
 ## Topics
 
-- SIEM Platforms
+- SIEM
 - EDR/XDR
 - Threat Intelligence
-- Logging Infrastructure
+- Logging

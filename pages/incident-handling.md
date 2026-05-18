@@ -1,10 +1,12 @@
 # Incident Handling
 
-This section focuses on incident response processes and investigation workflows.
+Incident handling covers investigation and response procedures.
+
+---
 
 ## Topics
 
-- Alert Triage
+- Triage
 - Containment
-- Forensics
 - Recovery
+- Reporting

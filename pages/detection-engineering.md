@@ -1,10 +1,11 @@
 # Detection Engineering
 
-This section contains detection logic, Sigma rules, SIEM queries, and alert engineering methodologies.
+Detection engineering focuses on creating and improving security detections.
+
+---
 
 ## Topics
 
 - Sigma Rules
-- SIEM Detection
+- SIEM Queries
 - MITRE ATT&CK Mapping
-- Threat Indicators

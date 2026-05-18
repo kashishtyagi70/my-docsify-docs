@@ -1,11 +1,16 @@
 # SOC Fundamentals
 
-This section covers the foundational concepts of Security Operations Centers (SOC).
+Welcome to the SOC Fundamentals section.
 
-## Topics
+This section covers:
+- SOC operations
+- Analyst responsibilities
+- Monitoring workflows
+- Security concepts
 
+---
+
+## Available Topics
+
+- Getting Started
 - SOC Overview
-- Analyst Responsibilities
-- Monitoring Workflows
-- Threat Detection
-- Escalation Procedures
